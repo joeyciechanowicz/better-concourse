@@ -2,8 +2,6 @@ function annotatePlan() {
 	let options = {
 		'credentials': 'include',
 		'headers': {},
-		'referrer': 'https://concourse.halfpipe.io/teams/sigma/pipelines/mee.web-ui',
-		'referrerPolicy': 'no-referrer-when-downgrade',
 		'body': null,
 		'method': 'GET',
 		'mode': 'cors'
@@ -30,9 +28,13 @@ function annotatePlan() {
 						return;
 					}
 
-					console.log(gitInputs[0]);
+					console.log(gitInputs);
 
-					const message = gitInputs[0].metadata.filter(x => x.name === 'message')[0].value;
+					let message = gitInputs[0].metadata.filter(x => x.name === 'message')[0].value;
+					if (message.length > 50) {
+						message = message.substr(0, 48) + '...';
+					}
+
 					stageElements[i].innerHTML += `<text y="-10">${message}</text>`;
 					stageElements[i].hasAnnotation = true;
 				});
