@@ -16,9 +16,12 @@
     ],
     "persistent": true
   },
-  "options_page": "src/options_custom/index.html",
+  "options_ui": {
+    "page": "src/options_custom/index.html",
+    "open_in_tab": false
+  },
   "permissions": [
-    "https://concourse.halfpipe.io/*"
+    "storage"
   ],
   "content_scripts": [
     {
