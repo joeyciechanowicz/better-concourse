@@ -1,0 +1,12 @@
+.custom-build-action {
+    margin: 0 !important;
+}
+
+.custom-build-action:hover {
+    width: 20px !important;
+    line-height: 20px !important;
+}
+
+.fa.fa-plus-circle {
+    font-size: 20px;
+}

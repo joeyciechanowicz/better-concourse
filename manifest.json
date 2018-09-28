@@ -5,11 +5,10 @@
   "description": "Improves the UI for concourse",
   "homepage_url": "https://concourse.halfpipe.io",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icons/concourse-icon.png",
+    "48": "icons/concourse-icon.png",
+    "128": "icons/concourse-icon.png"
   },
-  "default_locale": "en",
   "background": {
     "scripts": [
       "src/bg/background.js"
