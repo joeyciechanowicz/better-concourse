@@ -9,4 +9,4 @@
 1. Clone this repo
 1. Open `chrome://extensions/`
 1. Enable developer mode if you haven't already
-1. Load unpacked extension
+1. Load unpacked extension and select the folder you clone this repo to
